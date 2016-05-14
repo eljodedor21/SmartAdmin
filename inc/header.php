@@ -245,37 +245,63 @@
 						<ul class="header-dropdown-list hidden-xs">
 							<li>
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-									<img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-us" alt="United States"> <span> English (US) </span> <i class="fa fa-angle-down"></i> </a>
-								<ul class="dropdown-menu pull-right">
-									<li class="active">
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
+									<img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-<?php echo @$_SESSION['lang'];?>" alt="United States"> 
+                                                                        <span> 
+                                                                            <?php
+                                                                                if (@$_SESSION['lang'] == 'us')
+                                                                                    echo $ui_lang_us;
+                                                                                elseif (@$_SESSION['lang'] == 'fr')
+                                                                                    echo $ui_lang_fr;
+                                                                                elseif (@$_SESSION['lang'] == 'es')
+                                                                                    echo $ui_lang_es;
+                                                                                elseif (@$_SESSION['lang'] == 'de')
+                                                                                    echo $ui_lang_de;
+                                                                                elseif (@$_SESSION['lang'] == 'jp')
+                                                                                    echo $ui_lang_jp;
+                                                                                elseif (@$_SESSION['lang'] == 'cs')
+                                                                                    echo $ui_lang_cs;
+                                                                                elseif (@$_SESSION['lang'] == 'it')
+                                                                                    echo $ui_lang_it;
+                                                                                elseif (@$_SESSION['lang'] == 'pt')
+                                                                                    echo $ui_lang_pt;
+                                                                                elseif (@$_SESSION['lang'] == 'ru')
+                                                                                    echo $ui_lang_ru;
+                                                                                elseif (@$_SESSION['lang'] == 'kr')
+                                                                                    echo $ui_lang_kr;
+                                                                            ?>
+                                                                        </span> 
+                                                                        <i class="fa fa-angle-down"></i> 
+                                                                </a>
+								<ul class="dropdown-menu pull-right" id="lang_change"> 
+									<li <?php echo @$_SESSION['lang'] == 'us' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-us" alt="United States"><?php echo " ".$ui_lang_us;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-fr" alt="France"> Français</a>
+									<li <?php echo @$_SESSION['lang'] == 'fr' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-fr" alt="France"><?php echo " ".$ui_lang_fr;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
+									<li <?php echo @$_SESSION['lang'] == 'es' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-es" alt="Spanish"><?php echo " ".$ui_lang_es;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-de" alt="German"> Deutsch</a>
+									<li <?php echo @$_SESSION['lang'] == 'de' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-de" alt="German"><?php echo " ".$ui_lang_de;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-jp" alt="Japan"> 日本語</a>
+									<li <?php echo @$_SESSION['lang'] == 'jp' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-jp" alt="Japan"><?php echo " ".$ui_lang_jp;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
+									<li <?php echo @$_SESSION['lang'] == 'cs' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-cn" alt="China"><?php echo " ".$ui_lang_cs;?></a>
 									</li>	
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
+									<li <?php echo @$_SESSION['lang'] == 'it' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-it" alt="Italy"><?php echo " ".$ui_lang_it;?></a>
 									</li>	
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-pt" alt="Portugal"> Portugal</a>
+									<li <?php echo @$_SESSION['lang'] == 'pt' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-pt" alt="Portugal"><?php echo " ".$ui_lang_pt;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-ru" alt="Russia"> Русский язык</a>
+									<li <?php echo @$_SESSION['lang'] == 'ru' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-ru" alt="Russia"><?php echo " ".$ui_lang_ru;?></a>
 									</li>
-									<li>
-										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-kr" alt="Korea"> 한국어</a>
+									<li <?php echo @$_SESSION['lang'] == 'kr' ? 'class="active"' : '';?> >
+										<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-kr" alt="Korea"><?php echo " ".$ui_lang_kr;?></a>
 									</li>						
 								</ul>
 							</li>

@@ -23,12 +23,12 @@ ex:
 */
 $page_nav = array(
     	"home" => array(
-		"title" => "Home",
+		"title" => $ui_home,
 		"icon" => "fa-home",
                 "url" => "ajax/blank_.php"
 	),
 	"dashboard" => array(
-		"title" => "Dashboard",
+		"title" => "$ui_dashboard",
 		"icon" => "fa-home",
 		"sub" => array(
 			"analytics" => array(
@@ -169,7 +169,7 @@ $page_nav = array(
 		)
 	),
 	"tables" => array(
-		"title" => "Tables",
+		"title" => "$ui_tables",
 		"icon" => "fa-table",
 		"sub" => array(
 			"normal" => array(
