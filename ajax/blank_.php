@@ -79,7 +79,7 @@
 				-->
 				<header>
 					<span class="widget-icon"> <i class="fa fa-comments"></i> </span>
-					<h2>Colaboradores </h2>				
+					<h2>Colaboradores</h2>				
 					
 				</header>
 
