@@ -79,8 +79,7 @@
 				-->
 				<header>
 					<span class="widget-icon"> <i class="fa fa-comments"></i> </span>
-					<h2>Colaboradores</h2>				
-					
+					<h2>Colaboradores</h2>
 				</header>
 
 				<!-- widget div-->
@@ -100,12 +99,12 @@
 						<table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
 							<thead>			                
                                                                 <tr>
-                                                                    <th>Name</th>
-                                                                    <th data-hide="tablet">Position</th>
-                                                                    <th data-hide="tablet">Office</th>
+                                                                    <th>Nome</th>
+                                                                    <th data-hide="tablet">Posição</th>
+                                                                    <th data-hide="tablet">Escritório</th>
                                                                     <th>Extn.</th>
                                                                     <th data-hide="tablet">Start date</th>
-                                                                    <th data-hide="tablet">Salary</th>
+                                                                    <th data-hide="tablet">Salário</th>
                                                                 </tr>                                                                
 							</thead>
 						</table>
